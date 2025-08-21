@@ -1,0 +1,36 @@
+site_name: FORTINAC
+site_url: https://docs.example.com
+strict: true
+repo_url: https://github.com/<org>/<repo>
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: images/logo.svg
+  favicon: images/logo.svg
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started: 01-Getting-Started.md
+  - Configuration: 02-Configuration.md
+  - Advanced: 10-Advanced.md
+  - Common: Common/frequent-steps.md
